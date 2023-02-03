@@ -1,27 +1,80 @@
 <!DOCTYPE html>
 <html>
-<style>
-    .navbar{
-        border:5px outset red;
-        background-color: lightblue; 
-    }
-    .navbar>a{
-        
-        display: block;
-        text-align: center;
-        width: 90px;
-        margin: 10px;
-    }
-
-</style>
 <head>
-    <title>Bar Casa Juan</title>
+    <title>Casa Juan</title>
     <meta charset="utf-8">
+    <meta name="description" content="Actividad 1">
 </head>
+<style>
+    .header{
+        background-color: rgb(238, 223, 207);
+    }
+    .nav a{
+        text-decoration: none;
+        margin: 15px;
+        color: rgb(59, 56, 52);
+    }
+    .nav a:hover{
+        color: black;
+    }
+    .carrousel{
+        display: flex;
+        justify-content: center;
+    }
+    .carrousel img{
+        width: 580px;
+        height: 350px;
+        margin: 10px;
+        opacity: 0.8;
+        box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2)
+    }
+    .carrousel img:hover{
+        opacity: 1.0;
+    }
+    .footer{
+        display: flex;
+        background-color: rgb(238, 223, 207);
+        width: 100%;
+        height: 50px;
+        justify-content: center;
+    }
+    .copy{
+        display: flex;
+        justify-content: center;
+        font-size: smaller;
+    }
+</style>
 <body>
-    <h1>Bar Casa Juan</h1>
-    <div class="navbar"> 
-        <a href="./index.html">Inicio</a><a href="./html/menu.html">Menus</a><a href="./html/reserva.html">Reserva</a><a href="./html/nosotros.html">Nosotros</a>
+<div class="header">
+    <div class="logo" style="text-align: center;">
+        <h1>Casa Juan</h1>
     </div>
+    <div class="nav" style="text-align: center;">
+        <a href="./index.html">Inicio</a>
+        <a href="./html/menu.html">Menu</a>
+        <a href="./html/reserva.html">Reservas</a>
+        <a href="./html/nosotros.html">Nosotros</a><hr style="box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2)">
+    </div>
+</div>
+<a id="./index.html#volerArriba"></a>
+<div class="carrousel">
+    <img src="./img/img1.jpg" alt="">
+    <img src="./img/img2.jpg" alt="">
+    <img src="./img/img3.jpg" alt="">
+</div><hr style="box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2)">
+<blockquote>
+    <p>Casa Juan es un bar situado en Quintanar de la Orden, un hermoso pueblo de la provincia de Toledo. Conocido por su amplia oferta de comida española, es un lugar ideal para disfrutar de una cena en familia o con amigos.</p>
+    
+    <p>El menú de Casa Juan es variado y ofrece opciones para todos los gustos. Desde platos tradicionales como tortilla española y paella, hasta opciones vegetarianas y sin gluten. Además, cuentan con una selección de vinos españoles para acompañar tu comida.</p>
+    
+    <p>Si buscas un ambiente acogedor y una comida deliciosa, Casa Juan es el lugar perfecto. ¡No esperes más y haz una reservación hoy mismo!</p>
+</blockquote>
+<a href="#volverArriba">Volver arriba</a>
+<hr style="padding-bottom: 0%;">
+<div class="footer" style="text-align: center;">
+    <div class="copy">
+        <p>© 2023 Walter Morel</p>
+    </div>
+</div>
 </body>
 </html>
