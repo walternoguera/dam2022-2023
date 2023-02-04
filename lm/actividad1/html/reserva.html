@@ -1,1 +1,110 @@
-<p>3</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .header{
+        background-color: rgb(238, 223, 207);
+    }
+    .nav a{
+        text-decoration: none;
+        margin: 15px;
+        color: rgb(59, 56, 52);
+    }
+    .nav a:hover{
+        color: black;
+        text-shadow: 1px 1px #000000;
+    }
+    .formulario{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 700px;
+        background-color: #fffdfd;
+    }
+    .footer{
+        display: flex;
+        background-color: rgb(238, 223, 207);
+        width: 100%;
+        height: 50px;
+        justify-content: center;
+    }
+    .copy{
+        display: flex;
+        justify-content: center;
+        font-size: smaller;
+    }
+</style>
+<body>
+    <div class="header" id="arriba">
+        <div class="logo" style="text-align: center;">
+            <h1>Rte Casa Juan</h1>
+        </div>
+        <div class="nav" style="text-align: center;">
+            <a href="../index.html">Inicio</a>
+            <a href="./menu.html">Menu</a>
+            <a href="./reserva.html">Reservas</a>
+            <a href="./html/nosotros.html">Nosotros</a><hr style="box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2)">
+        </div>
+    </div>
+    <h3 style="text-align: center;">Puedes hacer tus reservas</h3>
+    <div class="formulario">
+        <form style="text-align: center;" id="formulario">
+            <label for="nombre" style="margin-left: auto;">Nombre
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre" style="margin-bottom: 30px;" required><br>
+            </label>
+            <label for="apellido" style="margin-right: 5px;">Apellido
+                <input type="text" id="apellido" placeholder="Ingresa tu apellido" required><br><br>
+            </label>
+            <label for="email" style="margin-right: 5px;">Correo electronico
+                <input type="text" id="email" placeholder="Ingresa tu correo" required><br><br><hr size="1">
+            </label>
+            <label for="nombreTarjeta" style="margin-right: 5px;">Titular de la tarjeta
+                <input type="text" id="nombreTarjeta" placeholder="Ingresa el nombre que aparece en tu tarjeta" style="margin-bottom: 30px;" required><br>
+            </label>
+            <label for="numTarjeta" style="margin-right: 5px;">Número de tarjeta
+                <input type="text" id="numTarjeta" placeholder="Ingresa tu número de tarjeta" required><br><br><hr size="1">
+            </label>
+            <label for="fecha">Fecha de reserva
+                <input type="date" required id="fecha">
+                <input type="time" required id="hora"><br><br>
+            </label>
+            <label for="zona">Zona:
+                <input type="radio" name="terraza" id="terraza" value="terraza">Terraza
+                <input type="radio" name="salon" id="salon" value="salon">Salón
+            </label><br><br>
+            <label for="">
+                <textarea name="" id="" style="width: 300px; height: 70px; resize: none;" placeholder="Comentario adicional"></textarea>
+            </label><br><br>
+            <input type="submit" value="Enviar">
+            <button type="button" onclick="informe()">Generar informe</button>
+        </form>
+    </div>
+    <script>
+        function informe() {
+        var nombre = document.getElementById("nombre").value;
+        var apellido = document.getElementById("apellido").value;
+        var fecha = document.getElementById("fecha").value;
+        var hora = document.getElementById("hora").value;
+        var informe = "Sr/sra " + nombre + " " + apellido + ".\n" + "Tienes una reserva en el restaurante Casa Juan, el dia " + fecha + " a las " + hora + " horas" + "\n" + "Te esperamos.";
+        var file = new Blob([informe], {type: "text/plain"});
+        var a = document.createElement("a");
+        a.href = URL.createObjectURL(file);
+        a.download = "Reserva.txt";
+        a.click();
+        }
+    </script>
+
+    <a href="#arriba">Volver arriba</a>
+    <hr style="padding-bottom: 0%;">
+    <div class="footer" style="text-align: center;">
+        <div class="copy">
+            <p>© 2023 Walter Morel</p>
+        </div>
+    </div>
+</body>
+</html>
