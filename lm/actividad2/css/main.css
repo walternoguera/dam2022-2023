@@ -1,0 +1,57 @@
+body { height: 100%;margin: 0;}
+.row{ display: flex; height: 100%; width: 100%; flex-wrap: wrap;}
+
+/*agregando atrubutos a los elementos .col-**/
+.col-12, .col-4, .col-6{
+    box-sizing: border-box; border:1px solid black;}
+
+/*Media queries*/
+/*xs 375*/
+@media (min-width: 375px){
+    .col-12, .col-4, .col-6{
+        width: 100%;
+    }
+    .col-12, .col-6{
+        height: 13.3vh;
+    }
+    .col-4{
+        height: 20vh;
+    }
+    .col-12{
+        background-color: burlywood;
+    }
+    .col-4-1, .col-4-3{
+        background-color: red;
+    }
+    .col-4-2{
+        background-color: aquamarine;
+    }
+    .col-6{
+        background-color: yellow;
+    }
+}
+/*sm 576*/
+@media (min-width: 576px){
+    .col-12, .col-4-3, .col-6{
+        width: 100%;
+    }
+    .col-4-1, .col-4-2{
+        width: 50%;
+        background-color: red;
+        height: 60vh;
+    }
+    .col-12{background-color: aqua;}
+    .col-4-3{background-color: green;}
+}
+/*md 768 y lg 992*/
+@media (min-width: 768px){
+    .col-12{
+        width: 100%;
+        background-color: green;
+    }
+    .col-4{
+        width: 33.33%;
+        background-color: red;
+        height: 60vh;
+    }
+}
