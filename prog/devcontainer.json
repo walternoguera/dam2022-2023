@@ -1,0 +1,26 @@
+// Para obtener detalles sobre el formato, consulte https://aka.ms/vscode-remote/devcontainer.json o el LÉAME de este archivo en: 
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.128.0/containers/java-8 
+{ 
+	"nombre"  :  "Java 8"  , 
+	"dockerFile"  :  "Dockerfile"  , 
+
+	// Establece valores *predeterminados* de configuración específica del contenedor.json en la creación del contenedor. 
+	"configuraciones"  :  { 
+		"terminal.integrated.shell.linux"  :  "/bin/bash"  , 
+		"java.home"  :  "/docker-java-home" 
+	}  , 
+
+	// Agregue los ID de las extensiones que desea instalar cuando se crea el contenedor. 
+	"extensiones"  :  [ 
+		"vscjava.vscode-java-paquete" 
+	]  , 
+
+	// Use 'forwardPorts' para hacer que una lista de puertos dentro del contenedor esté disponible localmente. 
+	"Puertos de reenvío"  :  [  8080  ]  , 
+
+	// Use 'postCreateCommand' para ejecutar comandos después de crear el contenedor. 
+	// "postCreateCommand": "java -version", 
+
+	// Descomente para conectarse como un usuario no root.  Consulte https://aka.ms/vscode-remote/containers/non-root. 
+	"usuario remoto"  :  "vscode" 
+} 
