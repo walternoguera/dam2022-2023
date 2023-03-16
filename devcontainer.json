@@ -1,0 +1,20 @@
+{
+  "name": "MyCodespace",
+  "image": "github/mycodespace:latest",
+  "extensions": [
+    "redhat.java",
+    "ms-vscode.cpptools",
+    "vscode.html",
+    "vscjava.vscode-java-pack"
+  ],
+  "settings": {
+    "java.home": "/usr/lib/jvm/java-11-openjdk-amd64",
+    "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+    "java.format.settings.profile": "GoogleStyle",
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "mounts": [
+    "source=/path/to/repository,target=/workspace,type=bind,consistency=delegated"
+  ],
+  "postCreateCommand": "bash /path/to/setup.sh"
+}
