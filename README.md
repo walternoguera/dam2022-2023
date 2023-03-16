@@ -1,4 +1,4 @@
-# 💻 Desarrollo de Aplicaciones Multiplataforma (DAM) 📱🖥️
+# 💻 Desarrollo de Aplicaciones Multiplataforma (DAM)🖥️
 
 ## Lista de Temas 📚
 
