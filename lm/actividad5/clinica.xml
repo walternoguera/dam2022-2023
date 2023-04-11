@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Se pretende almacenar médicos de una determinada clínica que tienen los
+siguientes datos:
+1. Nº COLEGIADO.
+2. NOMBRE.
+3. APELLIDOS.
+4. FECHA ALTA.
+5. ESPECIALIDAD.
+- La clínica tiene varios médicos.
+- Un médico tiene un número de colegiado (texto simple).
+- Un médico tiene nombre (texto simple).
+- Un médico tiene dos apellidos (texto simple).
+- Un médico tiene una fecha de alta (día, mes y año).
+- Un médico tiene una o varias especialidades (texto simple).-->
+
+<clinica>
+    <medico>
+        <numeroColegiado>198231</numeroColegiado>
+        <nombre>Lorenzo</nombre>
+        <apellidos>Moreno</apellidos>
+        <fechaAlta>10/09/2010</fechaAlta>
+        <especialidades>
+            <tipo>Cirugía</tipo>
+            <tipo>Pediatría</tipo>
+            <tipo>Cardiología</tipo>
+        </especialidades>
+    </medico>
+    <medico>
+        <numeroColegiado>198232</numeroColegiado>
+        <nombre>Ana</nombre>
+        <apellidos>Noguera</apellidos>
+        <fechaAlta>19/01/2011</fechaAlta>
+        <especialidades>
+            <tipo>Quirófano</tipo>
+            <tipo>Hospitalización</tipo>
+            <tipo>Consulta externa</tipo>
+        </especialidades>
+    </medico>
+    <medico>
+        <numeroColegiado>198233</numeroColegiado>
+        <nombre>Alejandro</nombre>
+        <apellidos>Ariza</apellidos>
+        <fechaAlta>20/05/2010</fechaAlta>
+        <especialidades>
+            <tipo>Dermatología</tipo>
+            <tipo>Gastroenterología</tipo>
+            <tipo>Neurología</tipo>
+        </especialidades>
+    </medico>
+    <medico>
+        <numeroColegiado>198234</numeroColegiado>
+        <nombre>Antonio</nombre>
+        <apellidos>Navarro</apellidos>
+        <fechaAlta>17/10/2010</fechaAlta>
+        <especialidades>
+            <tipo>Pediatría</tipo>
+            <tipo>Psiquiatría</tipo>
+            <tipo>Traumatología</tipo>
+        </especialidades>
+    </medico>
+</clinica>
