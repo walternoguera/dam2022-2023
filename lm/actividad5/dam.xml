@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Se pretende almacenar los módulos del ciclo formativo DAM/DAW.
+- El ciclo formativo tiene varios módulos.
+- Un módulo, tiene un elemento simple título y un elemento contenido.
+- Contenido tiene varias unidades.
+- Una unidad debe estar en un contenido.
+- Las unidades son texto simple.
+- Detrás de cada unidad solo puede ir otra unidad o fin de contenido.
+- Detrás de un módulo solo puede ir otro módulo.-->
+<dam>
+    <bbdd>
+        <titulo>Bases de datos</titulo>
+        <contenidos>
+            <unidad>1. Resultados de aprendizaje y criterios de evaluación</unidad>
+            <unidad>2. Introducción</unidad>
+            <unidad>3. Almacenamiento de la información</unidad>
+            <unidad>4. Interpretación de diagramas entidad/relación</unidad>
+            <unidad>5. Bases de datos relacionales</unidad>
+            <unidad>6. Realización de consultas</unidad>
+            <unidad>7. Tratamiento de datos</unidad>
+            <unidad>8. Programación de bases de datos</unidad>
+            <unidad>9. Uso de bases de datos objeto-relacionales</unidad>
+            <unidad>10. Repaso final</unidad>
+            <unidad>11. Evaluación final</unidad>
+            <finContenido/>
+        </contenidos>
+    </bbdd>
+    <ed>
+        <titulo>Entornos de desarrollo</titulo>
+        <contenidos>
+            <unidad>1. Resultados de aprendizaje y criterios de evaluación</unidad>
+            <unidad>2. Introducción</unidad>
+            <unidad>3. Desarrollo de software</unidad>
+            <unidad>4. Instalación y uso de entornos de desarrollo</unidad>
+            <unidad>5. Diseño y realización de pruebas</unidad>
+            <unidad>6. Optimización y documentación</unidad>
+            <unidad>7. Introducción al lenguaje unificado de modelado (UML)</unidad>
+            <unidad>8. Elaboración de diagramas de comportamient y clases</unidad>
+            <unidad>9. Repaso final</unidad>
+            <unidad>10. Evaluación final</unidad>
+        </contenidos>
+    </ed>
+    <fol>
+        <titulo>Formación y orientación laboral</titulo>
+        <contenidos>
+            <unidad>1. Resultados de aprendizaje y criterios de evaluación</unidad>
+            <unidad>2. Introducción y objetivos</unidad>
+            <unidad>3. Orientación profesional y búsqueda activa de empleo</unidad>
+            <unidad>4. Gestión del conflicto y equipos de trabajo</unidad>
+            <unidad>5. Contrato de trabajo y relaciones laborales</unidad>
+            <unidad>6. Seguridad social, empleo y desempleo</unidad>
+            <unidad>7. Conceptos básicos sobre seguridad y salud en el trabajo</unidad>
+            <unidad>8. Evaluación de riesgos profesionales</unidad>
+            <unidad>9. Aplicación de medidas de prevención y protección en la empresa</unidad>
+            <unidad>10. Repaso final</unidad>
+            <unidad>11. Evaluación final</unidad>
+            <finContenido/>
+        </contenidos>
+    </fol>
+    <lm>
+        <titulo>Lenguaje de marcas y sistemas de gestión de información</titulo>
+        <contenidos>
+            <unidad>1. Resultados de aprendizaje y criterios de evaluación</unidad>
+            <unidad>2. Introducción</unidad>
+            <unidad>3. Reconocimiento de las características de lenguajes de marcas</unidad>
+            <unidad>4. Lenguaje para la visualización de información</unidad>
+            <unidad>5. Lenguajes para el almacenamiento y transmisión de información</unidad>
+            <unidad>6. Definición de esquemas y vocabularios en XML</unidad>
+            <unidad>7. Conversión y adaptación de documentos XML</unidad>
+            <unidad>8. Almacenamiento de información</unidad>
+            <unidad>9. Aplicación de los lenguajes de marcas a la sindicación de contenidos</unidad>
+            <unidad>10. Repaso final</unidad>
+            <unidad>11. Evaluación final</unidad>
+            <finContenido/>
+        </contenidos>
+    </lm>
+    <prog>
+        <titulo>Programación</titulo>
+        <contenidos>
+            <unidad>1. Resultados de aprendizaje y criterios de evaluación</unidad>
+            <unidad>2. Introducción</unidad>
+            <unidad>3. Introducción a la programación</unidad>
+            <unidad>4. Identificación de los elementos de un programa informático</unidad>
+            <unidad>5. Uso de estructuras de control</unidad>
+            <unidad>6. Aplicación de las estructuras de almacenamiento</unidad>
+            <unidad>7. Introducción a la orientación a objetos</unidad>
+            <unidad>8. Utilización de objetos</unidad>
+            <unidad>9. Desarrollo de clases</unidad>
+            <unidad>10. Repaso final</unidad>
+            <unidad>11. Evaluación final</unidad>
+            <finContenido/>
+        </contenidos>
+    </prog>
+    <si>
+        <titulo>Sistemas informáticos</titulo>
+        <contenidos>
+            <unidad>1. Resultados de aprendizaje y criterios de evaluación</unidad>
+            <unidad>2. Introducción</unidad>
+            <unidad>3. Explotación de sistemas microinformáticos</unidad>
+            <unidad>4. Instalación de sistemas operativos</unidad>
+            <unidad>5. Gestión de la información</unidad>
+            <unidad>6. Configuración de sistemas operativos</unidad>
+            <unidad>7. Conexión de sistemas en red</unidad>
+            <unidad>8. Gestión de recursos en una red</unidad>
+            <unidad>9. Explotación de aplicaciones informáticas de propósito general</unidad>
+            <unidad>10. Repaso final</unidad>
+            <unidad>11. Evaluación final</unidad>
+            <finContenido/>
+        </contenidos>
+    </si>
+</dam>
