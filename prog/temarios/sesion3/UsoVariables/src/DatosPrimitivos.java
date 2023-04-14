@@ -3,7 +3,7 @@ public class DatosPrimitivos {
 
 	public static void main(String[] args) {
 		
-		//ENTEROS ENTEROS
+		//NUMEROS ENTEROS
 		 byte numeroByte=100;
 		 short numeroShort=20000;
 		 int numeroInt=100000;
