@@ -39,12 +39,13 @@ public class Caso5Array {
 			String[] habitaciones = { "AZUL", "ROJA", "VERDE", "ROSA", "GRIS" };
 			int[] camas = { 2, 1, 3, 2, 1 };
 			String[] plantas = { "PRIMERA", "PRIMERA", "SEGUNDA", "SEGUNDA", "TERCERA" };
+			String[] mensajes = { "Listado de habitaciones disponibles: ", "ID| HABITACIÓN| CAMAS| PLANTA", "-----------------------------", "Introduzca número de habitación: ", "ERROR: ", " no está asociado a ninguna habitación."  };
 			Scanner lector = new Scanner(System.in);
 			
-			System.out.println("Listado de habitaciones disponibles: ");
+			System.out.println(mensajes[0]);
 			System.out.println("");
-			System.out.println("ID| HABITACIÓN| CAMAS| PLANTA");
-			System.out.println("-----------------------------");
+			System.out.println(mensajes[1]);
+			System.out.println(mensajes[2]);
 			System.out.println(id[0] + "." + "  " + habitaciones[0] + "          " + camas[0] + "    " + plantas[0]);
 			System.out.println(id[1] + "." + "  " + habitaciones[1] + "          " + camas[1] + "    " + plantas[1]);
 			System.out.println(id[2] + "." + "  " + habitaciones[2] + "         " + camas[2] + "    " + plantas[2]);
@@ -53,13 +54,13 @@ public class Caso5Array {
 			System.out.println("");
 			
 			for ( int i = 0; i <= 5; i++ ) {
-				System.out.print("Introduzca número de habitación: ");
+				System.out.print(mensajes[3]);
 				numeroId = lector.nextInt();
 				lector.nextLine();
 				if (numeroId <= 5) {
 					System.out.println(habitaciones[numeroId-1] + " " + camas[numeroId-1] + " " + plantas[numeroId-1]);
 				} else {
-					System.out.println("ERROR: " + numeroId + " no está asociado a ninguna habitación.");
+					System.out.println(mensajes[4] + numeroId + mensajes[5]);
 				}
 			} lector.close();
 	}
