@@ -14,11 +14,11 @@ public class StringArray {
 		}
 
 		if (nombre[0].length() > nombre[1].length()) {
-			System.out.println("el mayor es: `" + nombre[0] + "` con " + nombre[0].length() + " caracteres");
-			System.out.println("En cambio `" + nombre[1] + "` solo tiene " + nombre[1].length() + " caracteres");
+			System.out.println("El mayor es: `" + nombre[0] + "` con " + nombre[0].length() + " caracteres.");
+			System.out.println("En cambio `" + nombre[1] + "` solo tiene " + nombre[1].length() + " caracteres.");
 		} else if (nombre[1].length() > nombre[0].length()) {
-			System.out.println("el mayor es: `" + nombre[1] + "` con " + nombre[1].length() + " caracteres");
-			System.out.println("En cambio `" + nombre[0] + "` solo tiene " + nombre[0].length() + " caracteres");
+			System.out.println("El mayor es: `" + nombre[1] + "` con " + nombre[1].length() + " caracteres.");
+			System.out.println("En cambio `" + nombre[0] + "` solo tiene " + nombre[0].length() + " caracteres.");
 		} else {
 			Utilidades.warning(null);
 		}
