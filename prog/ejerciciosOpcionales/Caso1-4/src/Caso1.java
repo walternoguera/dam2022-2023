@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class DecirNumero {
+public class Caso1 {
 
 	public static void main(String[] args) {
+		
 		/*
 		 * Caso 1
-		 * 
 		 * Realizar un programa que pida un número entero entre 1 y 10, ambos incluidos.
 		 * 
 		 * 
