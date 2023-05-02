@@ -10,7 +10,17 @@ public class Utilidades {
 			Scanner lector = new Scanner(System.in);
 			System.out.println(texto);
 			numero = lector.nextInt();
-			lector.close();
+			return numero;
+		}
+		
+		public static int pedirIntRango(String texto, int inicio, int fin) {
+			int numero;
+			Scanner lector = new Scanner(System.in);
+	
+			do {
+				System.out.println(texto);
+				numero = lector.nextInt();
+			} while (numero < inicio || numero > fin);
 			return numero;
 		}
 }
