@@ -22,5 +22,12 @@ public class Utilidades {
 				numero = lector.nextInt();
 			} while (numero < inicio || numero > fin);
 			return numero;
+		} 
+		
+		public static String pedirString(String texto) {
+			Scanner lector = new Scanner(System.in);
+			System.out.println(texto);
+			texto = lector.nextLine();
+			return texto;
 		}
 }
