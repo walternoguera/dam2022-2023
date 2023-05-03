@@ -25,7 +25,7 @@ public class Caso8 {
 		
 		bruto = precio * cantidad;
 		
-		if (cantidad > 100) {
+		/*if (cantidad > 100) {
 			msg = "Según la cantidad de artículo," + cantidad + " el descuento del 40%.\nTotal a pagar: " + (bruto -(bruto * 0.4));
 		} else if (cantidad >= 25 && cantidad <= 100) {
 			msg = "Según la cantidad de artículo," + cantidad + " el descuento del 20%.\nTotal a pagar: " + (bruto -(bruto * 0.2));
@@ -33,7 +33,7 @@ public class Caso8 {
 			msg = "Según la cantidad de artículo," + cantidad + " el descuento del 10%.\nTotal a pagar: " + (bruto -(bruto * 0.1));
 		} else {
 			msg = "Según la cantidad de artículo," + cantidad + " el descuento del 0%.\nTotal a pagar: " + (bruto);
-		}
+		}*/
 		return msg;
 	} 
 }
