@@ -6,7 +6,7 @@ public class ValidarDatos {
 
 		String fecha = "15/12/2022";
 		String cadenaNumeros;
-		int dia, mes, ano;
+		int dia, mes, anio;
 
 		// tiene que tener 10 caracteres
 		if (fecha.length() == 10) {
@@ -18,12 +18,12 @@ public class ValidarDatos {
 					System.out.println("son numeros");
 					dia = Integer.parseInt(fecha.substring(0, 2));
 					mes = Integer.parseInt(fecha.substring(3, 5));
-					ano = Integer.parseInt(fecha.substring(6));
+					anio = Integer.parseInt(fecha.substring(6));
 					// semantica, hay que mirar los dias, mes y año, por ej: dias de 1 a 31, mes de
 					// 1 a 12 y año 2000 a 2022
 					System.out.println(dia);
 					System.out.println(mes);
-					System.out.println(ano);
+					System.out.println(anio);
 				} else {
 					System.out.println("error no son numeros");
 				}
