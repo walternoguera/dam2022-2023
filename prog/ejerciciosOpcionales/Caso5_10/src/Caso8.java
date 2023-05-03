@@ -15,25 +15,27 @@ public class Caso8 {
 
 		precio = Utilidades.pedirDatos("Dime el precio: ");
 		cantidad = Utilidades.pedirDatos("Dime la cantidad: ");
-		
+
 		System.out.println(calcular(precio, cantidad));
 	}
-	
+
 	private static String calcular(int precio, int cantidad) {
 		int bruto;
 		String msg = "";
-		
+
 		bruto = precio * cantidad;
-		
 		if (cantidad > 100) {
-			msg = "Según la cantidad de artículo," + cantidad + " el descuento del 40%.\nTotal a pagar: " + (bruto -(bruto * 0.4));
+			msg = "Según la cantidad de artículo " + cantidad + "` el descuento del 40%.\\nTotal a pagar: "
+					+ (bruto - (bruto * 0.4));
 		} else if (cantidad >= 25 && cantidad <= 100) {
-			msg = "Según la cantidad de artículo," + cantidad + " el descuento del 20%.\nTotal a pagar: " + (bruto -(bruto * 0.2));
+			msg = "Según la cantidad de artículo," + cantidad + " el descuento del 20%.\nTotal a pagar: "
+					+ (bruto - (bruto * 0.2));
 		} else if (cantidad >= 10 && cantidad <= 24) {
-			msg = "Según la cantidad de artículo," + cantidad + " el descuento del 10%.\nTotal a pagar: " + (bruto -(bruto * 0.1));
+			msg = "Según la cantidad de artículo," + cantidad + " el descuento del 10%.\nTotal a pagar: "
+					+ (bruto - (bruto * 0.1));
 		} else {
 			msg = "Según la cantidad de artículo," + cantidad + " el descuento del 0%.\nTotal a pagar: " + (bruto);
 		}
 		return msg;
-	} 
+	}
 }
