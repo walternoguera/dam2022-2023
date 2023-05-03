@@ -8,7 +8,7 @@ public class Utilidades {
 			numero = lector.nextInt();
 			return numero;
 		}
-
+		//pedimos un rango de numero y devolvemos un string
 		public static int pedirIntRango(String texto, int inicio, int fin) {
 			int numero;
 			Scanner lector = new Scanner(System.in);
