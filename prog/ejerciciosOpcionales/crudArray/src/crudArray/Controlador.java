@@ -23,7 +23,6 @@ public class Controlador {
 		String[] generos = new String[3];
 		int[] anio = new int[3];
 		int opciones;
-		String numeros = "0123456789";
 		char reset = 0;
 		String msg = "";
 		Scanner lector = new Scanner(System.in);
