@@ -17,11 +17,32 @@ public class CrudArray {
 		 * el menú hasta que se decida terminar.
 		 */
 		
-		String[] titulos = new String[20];
-		String[] generos = new String[20];
-		int[] año = new int[20];
+		String[] titulos = new String[3];
+		String[] generos = new String[3];
+		int[] anio = new int[3];
+		String msg = "";
+		int contador = 0;
+		
 		
 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/*for (int i = 0;i < 3; i++) {
+			titulos[i] = Utilidades.pedirString("Añade titulo: ");
+			generos[i] = Utilidades.pedirString("Añade genero: ");
+			anio[i] = Utilidades.pedirInt("Año: ");
+		}
+	
+		for (int i = 0;i < 3; i++) {
+			System.out.println(titulos[i] + generos[i] + anio[i] + "\n");
+		}*/
 	}
-
 }
