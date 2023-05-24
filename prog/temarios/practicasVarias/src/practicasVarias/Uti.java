@@ -45,5 +45,17 @@ public class Uti {
 		return contador;
 	}
 	
+	/*---------------------------------------------------*/
+	public static float[] arrayRango() {
+		Scanner lector = new Scanner(System.in);
+		int rango = 0;
+		float[] numeros = new float[rango];
+		System.out.println("Dime un rango: ");
+		rango = lector.nextInt();
+		lector.nextLine();
+		
+		return numeros;
+	}
+	
 	
 }

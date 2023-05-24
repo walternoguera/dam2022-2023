@@ -60,8 +60,5 @@ public class Controlador {
 		} catch (IndexOutOfBoundsException e) {
 			System.out.println("ERROR");
 		}
-		
-		
-		
 	}
 }

@@ -20,5 +20,16 @@ public class Controlador {
 			}
 		}
 		System.out.println("el numero 4 aparece: " + contador + " veces");
+		
+		System.out.println(MetodosPedia.resultFloat(2, 2));
+		System.out.println(MetodosPedia.mostrarString(2, 2));
+		System.out.println(MetodosPedia.floatDecimal(contador));
+		
+		
+		float numeroFloat = 3.5f;
+		System.out.println(MetodosPedia.floatDecimal(numeroFloat));
+		
+		
+	
 	}
 }
