@@ -9,12 +9,8 @@ public class Controlador {
 		misJuegos.addJuego(new Juego("Mario", 10, 45.234f));
 		misJuegos.addJuego(new Juego("Mario", 11, 31.44f));
 		misJuegos.addJuego(new Juego("Mortal Combat", 16, 67));
-		
 		misJuegos.datosJuego("Mario");
-		
 		misJuegos.precioMedio();
-		
 		System.out.println(misJuegos.juegoRepetido());
 	}
-
 }
