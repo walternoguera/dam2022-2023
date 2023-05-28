@@ -10,10 +10,6 @@ public class ClaseNoEstatica {
 	
 	public boolean fechaAnterior(LocalDate fecha1) {
 		//true es anterior
-		
-		
-		
-		
 		return fecha1.isBefore(LocalDate.now());
 	}
 }
