@@ -75,29 +75,29 @@ public class Coleccion {
 	}
 
 	public boolean juegoRepetido() {
-        boolean encontrado=false;
-        int contador=0;
-        int longitud=listadoJuegos.size();
-        int primera=0;
-        int ultima=0;
+		boolean encontrado = false;
+		int contador = 0;
+		int longitud = listadoJuegos.size();
+		int primera = 0;
+		int ultima = 0;
 
-        ArrayList<String> nombres=new ArrayList<String>();
+		ArrayList<String> nombres = new ArrayList<String>();
 
-        for(Juego item: listadoJuegos){
-            nombres.add(item.getNombreJuego());
-        }
+		for (Juego item : listadoJuegos) {
+			nombres.add(item.getNombreJuego());
+		}
 
-        while(contador<longitud && !encontrado){
-            primera=nombres.indexOf(listadoJuegos.get(contador).getNombreJuego());
-            ultima=nombres.lastIndexOf(listadoJuegos.get(contador).getNombreJuego());
+		while (contador < longitud && !encontrado) {
+			primera = nombres.indexOf(listadoJuegos.get(contador).getNombreJuego());
+			ultima = nombres.lastIndexOf(listadoJuegos.get(contador).getNombreJuego());
 
-            if(primera!=ultima){
-                encontrado=true;
-            }
+			if (primera != ultima) {
+				encontrado = true;
+			}
 
-            contador++;
-        }
+			contador++;
+		}
 
-        return encontrado;
+		return encontrado;
 	}
 }
