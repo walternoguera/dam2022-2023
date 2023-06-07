@@ -8,13 +8,17 @@ public class ClaseEstatica {
 		int rango = longitud - posicion;
 		String[] resultado = new String[longitud - posicion];
 
-		for (int i = 0; i < rango; i++) {
-			resultado[i] = dato[i + posicion];
+		try {
+			for (int i = 0; i < rango; i++) {
+				resultado[i] = dato[i + posicion];
+			}
+		} catch (Exception e) {
+			System.out.println("ERROR");
 		}
 		System.out.println(Arrays.toString(resultado));
 		return resultado;
 	}
-
+/*-------------------------------------------------------------------------------*/
 	public static int vocales(String palabra) {
 
 		int longitud = palabra.length();
