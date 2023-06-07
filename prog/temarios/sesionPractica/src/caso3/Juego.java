@@ -33,5 +33,4 @@ public class Juego {
 	public String toString() {
 		return "Juego [nombreJuego=" + nombreJuego + ", edadMinima=" + edadMinima + ", precio=" + precio + "]";
 	}
-	
 }
