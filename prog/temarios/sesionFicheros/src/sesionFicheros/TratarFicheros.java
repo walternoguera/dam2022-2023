@@ -2,7 +2,7 @@ package sesionFicheros;
 
 import java.util.Arrays;
 
-public class Controlador {
+public class TratarFicheros {
 
 	public static void main(String[] args) {
 		String lineaFijas = "pepe      32 madrid              ";
