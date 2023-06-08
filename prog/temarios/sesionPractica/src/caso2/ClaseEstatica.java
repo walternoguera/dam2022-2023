@@ -12,8 +12,8 @@ public class ClaseEstatica {
 			for (int i = 0; i < rango; i++) {
 				resultado[i] = dato[i + posicion];
 			}
-		} catch (Exception e) {
-			System.out.println("ERROR");
+		} catch (IndexOutOfBoundsException e) {
+
 		}
 		System.out.println(Arrays.toString(resultado));
 		return resultado;

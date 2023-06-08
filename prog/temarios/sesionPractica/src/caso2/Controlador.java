@@ -17,7 +17,7 @@ public class Controlador {
 		
 		
 		/*--------------------------------------------------------------*/
-		solucionEstatica = ClaseEstatica.trozoArray(palabrasEstatica, 3);
+		solucionEstatica = ClaseEstatica.trozoArray(palabrasEstatica, 6);
 		numVocales = ClaseEstatica.vocales("pepe");
 		mayor = objetoNoEstatico.mayor(50, 10);
 		System.out.println(mayor);
