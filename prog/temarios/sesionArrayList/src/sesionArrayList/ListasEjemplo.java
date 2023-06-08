@@ -44,5 +44,14 @@ public class ListasEjemplo {
 		nuevoValor = lector.next();
 		palabra.set(posicion, nuevoValor);
 		System.out.println(palabra);
+		
+		//borrar
+		System.out.println("Que nombre quieres borrar?: ");
+		palabraBuscada = lector.next();
+		palabra.indexOf(palabraBuscada);
+		posicion = palabra.indexOf(palabraBuscada);
+		palabra.remove(posicion);
+		
+		System.out.println(palabra);
 	}
 }
