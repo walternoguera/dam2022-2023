@@ -16,9 +16,6 @@ public class GestionAlumnos {
 			mostrar(listaAlumnos);
 		} catch (IndexOutOfBoundsException e) {
 			System.out.println("ERROR: La posición no existe");
-		} catch (Exception e) {
-			// TODO: handle exception
-			System.out.println("Hay un error");
 		}
 	}
 
