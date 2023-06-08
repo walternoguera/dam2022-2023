@@ -32,12 +32,5 @@ public class Controlador {
 		System.out.println(edad);
 		localidad = trozos[2];
 		System.out.println(localidad);
-		
-		
-		
-		
-
-		
 	}
-
 }
